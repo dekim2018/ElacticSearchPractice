@@ -44,4 +44,9 @@ public class PostService {
         return postRepository.save(post);
     }
 
+    public void delete(String id) {
+        Post post = findById(id);
+        postRepository.delete(post);
+    }
+
 }
