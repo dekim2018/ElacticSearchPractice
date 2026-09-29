@@ -57,8 +57,8 @@ public class PostControllerTests extends BaseTest {
                                 )
                 ).andExpect(status().isCreated())
                 .andExpect(jsonPath("title").value("Test Title"))
-                .andExpect(jsonPath("title").value("Test Title"))
-                .andExpect(jsonPath("title").value("Test Title"))
+                .andExpect(jsonPath("content").value("Test Content"))
+                .andExpect(jsonPath("author").value("Test Author"))
                 .andExpect(jsonPath("id").isNotEmpty());
     }
 
